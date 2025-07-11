@@ -5,6 +5,14 @@ const board = JXG.JSXGraph.initBoard('box1', {
   showNavigation: false
 });
 
+board.on('touchstart', function(evt) {
+  console.log('Touch start detected');
+});
+
+board.on('pinch', function(evt) {
+  console.log('Pinch zoom detected');
+});
+
 const curve = board.create('functiongraph', [x => Math.sin(x)], {
   strokeColor: 'blue',
   strokeWidth: 2
