@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible JSXGraph</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Accessible JSXGraph on Mobile</h1>
+  </header>
+
+  <main>
+    <div id="box1" aria-label="Graph plotting area" role="img" tabindex="0">
+      <!-- JSXGraph will render here -->
+    </div>
+    <div id="controls">
+      <button onclick="resetGraph()">Reset Graph</button>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+  <script src="../src/script.js"></script>
+</body>
+</html>
+
